@@ -1,0 +1,50 @@
+* {
+	color: #696969; /* dimgray */
+	font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+}
+body { 
+	color: #696969; /* dimgray */
+	background-color: #ccc; 
+	font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif; 
+	padding: 1em;
+}
+body > div { text-align: left; }
+#content { 
+	background-color: white;
+	border-radius: 16px;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	padding: 10px 40px;
+	width: 550px;
+}
+#head {
+	padding-top: .5em;
+}
+#head strong { color: black; }
+#company { 
+	font-size: 8em; 
+	padding: 0; 
+	margin-bottom: 0.2em;
+	margin-top: 0;
+}
+h1 #variable { color: #FF6600; } /* VibrantInk FTW! */
+h1 #consulting { color: silver; }
+#head p { 
+	font-size: 2em; 
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+#contact ul, #contact p { margin: 0; padding: 0; }
+#contact-list { list-style: none outside; }
+#contact-list li .label {
+	float: left;
+	width: 70px;
+	color: silver;
+}
+#contact-list a,
+#contact-list a span
+{ 
+	text-decoration: none;
+	color: black;
+}
+

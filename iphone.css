@@ -1,0 +1,19 @@
+/* iPhone.css */
+body { padding: 0; }
+#content {
+	width: 97%;
+	height: 100%;
+	padding: 0 0 10px 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+#head { padding: 0; }
+#company {
+	font-size: 4.5em;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 0.2em;
+}
+#head p { font-size: 1.2em; }
+#contact-list li .label { display: none; }

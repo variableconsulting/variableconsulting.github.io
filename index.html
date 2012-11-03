@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>variable consulting : software design and development in Houston</title>
+	<link rel="icon" type="image/png" href="favicon.png"/>
+	<link href="stylesheet.css" type="text/css" rel="stylesheet" />
+	<!-- iPhone -->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<link media="only screen and (max-device-width: 480px)" href="/iphone.css" rel="stylesheet" type="text/css"/>
+	<link rel="apple-touch-icon" href="/iphone.png" />
+	<!-- /iPhone -->
+	<script type="text/javascript">
+		function mix(location,protocol) {
+			var e = document.getElementById('contact-email');
+			document.location = 'mailto:' + (e.textContent || e.innerText);
+		}
+		if (navigator.userAgent.indexOf('iPhone') != -1) {
+			addEventListener('load', function() {
+				setTimeout(hideAddressBar, 10);
+				}, false);
+		}
+		function hideAddressBar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+</head>
+<body>
+	<div id="content">
+	<div id="head">
+		<h1 id="company">
+			<span id="variable">var</span><span id="consulting">C</span>
+		</h1>
+		<p>
+			Hi, we are Variable Consulting.<br/>
+			We provide <strong>software design and 
+			development</strong> services in Houston.
+		</p>
+	</div>
+	<div id="contact">
+		<ul id="contact-list">
+			<li>
+				<span class="label">e-mail</span> 
+				<a href="javascript:mix('contact-email','mailto:');" id="contact-email"><span>contact</span><span>@variableconsulting.com</span></a>
+			</li>
+			<li>
+				<span class="label">phone</span> <a href="tel:+1-281-923-8851">(281) 923-8851</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+</body>
+
+</html>
