@@ -1,22 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<title>variable consulting : software design and development in Houston</title>
 	<link rel="icon" type="image/png" href="favicon.png"/>
-	<link href="stylesheet.css" type="text/css" rel="stylesheet" />
+	<link href="bootstrap.min.css" type="text/css" rel="stylesheet" />
+	<!--<link href="stylesheet.css" type="text/css" rel="stylesheet" />-->
+	<style type="text/css">
+		.var-v { color: #FF6600 }
+		.var-c { color: #808080 }
+		section { padding-top: 30px }
+	</style>
+	
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
 	<!-- iPhone -->
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-touch-fullscreen" content="yes" />
-	<link media="only screen and (max-device-width: 480px)" href="/iphone.css" rel="stylesheet" type="text/css"/>
 	<link rel="apple-touch-icon" href="/iphone.png" />
 	<!-- /iPhone -->
 	<script type="text/javascript">
 		function mix(location,protocol) {
-			var e = document.getElementById('contact-email');
-			document.location = 'mailto:' + (e.textContent || e.innerText);
+			var e = document.getElementById(location);
+			document.location =  protocol + (e.textContent || e.innerText);
 		}
 		if (navigator.userAgent.indexOf('iPhone') != -1) {
 			addEventListener('load', function() {
@@ -29,29 +39,131 @@
 	</script>
 </head>
 <body>
-	<div id="content">
-	<div id="head">
-		<h1 id="company">
-			<span id="variable">var</span><span id="consulting">C</span>
-		</h1>
-		<p>
-			Hi, we are Variable Consulting.<br/>
-			We provide <strong>software design and 
-			development</strong> services in Houston.
-		</p>
+	<header>
+	<div class="container">
+		<p>&nbsp;</p>
+		<div class="hero-unit hidden-phone">
+			<h2>Hello there. We are</h2>
+			<h1><span class="var-v">Variable</span> <span class="var-c">Consulting</span></h1>	
+			<p>&nbsp;</p>
+			<p>We provide <strong>full-stack</strong> software design and development services.</p>
+			<address>
+				<a href="javascript:mix('contact-email','mailto:');" id="contact-email"><span>contact</span><span>@variableconsulting.com</span></a> or 
+				<a href="javascript:mix('contact-phone', 'tel:')" id="contact-phone"><span>281</span><span>-</span><span>923</span><span>-</span><span>8851</span></a>
+			</address>
+	
+		</div>
+		<div class="well visible-phone">
+			<h4>Hello there. We are</h4>
+			<h1><span class="var-v">Variable</span> <span class="var-c">Consulting</span></h1>	
+			<p>We provide <strong>full-stack</strong> software design and development services.</p>
+			<address>
+				<a href="javascript:mix('contact-email','mailto:');" id="contact-email"><span>contact</span><span>@variableconsulting.com</span></a><br/>
+				<a href="javascript:mix('contact-phone', 'tel:')" id="contact-phone"><span>281</span><span>-</span><span>923</span><span>-</span><span>8851</span></a>
+			</address>
+		</div>
 	</div>
-	<div id="contact">
-		<ul id="contact-list">
-			<li>
-				<span class="label">e-mail</span> 
-				<a href="javascript:mix('contact-email','mailto:');" id="contact-email"><span>contact</span><span>@variableconsulting.com</span></a>
-			</li>
-			<li>
-				<span class="label">phone</span> <a href="tel:+1-281-923-8851">(281) 923-8851</a>
-			</li>
-		</ul>
+	</header>
+
+	<div class="container">
+
+		<h2>Here's what we know and what we can do</h2>
+
+		<section>
+		<p>We have extensive experience on three platforms: web, desktop, and mobile, and across a multitude of domains.<p>
+
+		<div class="row">
+			<div class="offset1 span5">
+				<h3>Platforms</h3>
+				<ul class="unstyled">
+					<li>Web &amp; HTML5 / <abbr title="Rich Internet Applications">RIA</abbr></li>
+					<li>Microsoft .NET</li>
+					<li>Mobile: Apple iOS</li>
+				</ul>
+			</div>
+			
+			<div class="span5">
+				<h3>Business domains</h3>
+				<ul class="unstyled">
+					<li><strong>Energy</strong>: Oil, Gas &amp; Power</li>
+					<li><strong>Trading</strong>: Commodities &amp; Financial Instruments</li>
+					<li><strong>Content Management (CMS)</strong></li>
+					<li><strong>Legal</strong></li>
+				</ul>
+			</div>
+		</div>
+		</section>
+
+		<section>
+		<p>We speak a large number of programming languages and we built a large range of applications: 
+			from those supporting the needs of small businesses
+			to enterprise projects within Forbes 100 companies.</p>
+		<div class="row">
+			<div class="offset1 span5">
+				<h3>Front-end technologies</h3>
+				<ul class="unstyled">
+					<li>HTML, CSS, jQuery</li>
+					<li>JavaScript / CoffeeScript</li>
+					<li>ASP.NET Razor</li>
+					<li>WPF and WinForms</li>
+				</ul>
+			</div>
+
+			<div class="span5">
+				<h3>Back-end technologies</h3>
+				<strong>Frameworks:</strong>
+				<ul class="unstyled">
+					<li>ASP.NET MVC &amp; WebAPI</li>
+					<li>Python / Django</li>
+					<li>Ruby on Rails</li>
+					<li>Node.js</li>
+					<li>PHP</li>
+				</ul>
+
+				<strong>Storage:</strong>
+				<ul class="unstyled">
+					<li>RDBMS: MySQL, MS SQL, Oracle, PostgreSQL</li>
+					<li>NoSQL: MongoDB, CouchDB, RavenDB</li>
+					<li>Key-value stores: memcached, Redis, LevelDB, Tokyo Cabinet</li>
+				</ul>
+
+				<strong>Message Queuing:</strong>
+				<ul class="unstyled">
+					<li><abbr title="Advanced Message Queuing Protocol">AMPQ</abbr>: RabbitMQ, ActiveMQ</li>
+					<li>Tibco RV &amp; EMS</li>
+					<li><abbr title="Microsoft Message Queuing">MSMQ</abbr></li>
+				</ul>
+			</div>
+		</div>
+
+		<section>
+		<p>Need cloud? We know cloud. We had projects deployed on all large cloud platforms.</p>
+		<div class="row">
+			<div class="offset1 span6">
+				<h3>Cloud computing</h3>
+				<ul class="unstyled">
+					<li>Heroku</li>
+					<li>Amazon (<abbr title="Amazon Web Services">AWS</abbr>, <abbr title="Amazon Elastic Compute Cloud">EC2</abbr>)</li>
+					<li>Microsoft Windows Azure</li>
+					<li>Google AppEngine</li>
+					<li>Nodejitsu</li>
+				</ul>
+			</div>
+		</div>
+		</section>
+
 	</div>
+
+	<footer>
+	<hr/>
+	<div class="container">
+		<p>Interested? Want to to talk to us:</p>
+			<address>
+				<a href="javascript:mix('contact-email','mailto:');" id="contact-email"><span>contact</span><span>@variableconsulting.com</span></a><br/>
+				<a href="javascript:mix('contact-phone', 'tel:')" id="contact-phone"><span>281</span><span>-</span><span>923</span><span>-</span><span>8851</span></a>
+			</address>
 	</div>
+	</footer>
 </body>
 
 </html>
